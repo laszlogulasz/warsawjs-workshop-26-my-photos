@@ -1,24 +1,13 @@
-const images = ["confront.png", "warsawjs.png"];
-const imagesGallery = document.getElementById("images");
+import image1 from "/images/confront.png";
+import image2 from "/images/warsawjs.png";
+import image3 from "/images/saturn.jpg";
+import Image from "/image.js";
 
-class Image {
-  constructor(path) {
-    this.path = path;
-  }
+const images = [image1, image2, image3];
+const favButton = document.getElementById("show-favourites");
+const imagesList = images.map(path => new Image(path));
 
-  show() {
-    this.imageElement = document.createElement("img");
-    this.imageElement.setAttribute("src", `images/${this.path}`);
-    this.imageElement.addEventListener("click", () => this.toggleFavorite());
-    imagesGallery.appendChild(this.imageElement);
-  }
-
-  toggleFavorite() {
-    this.imageElement.classList.toggle("image--favourite");
-  }
-}
-
-images.forEach(fileName => {
-  const image = new Image(fileName);
-  image.show();
-});
+imagesList.forEach(image => image.show());
+favButton.addEventListener("click", () =>
+  imagesList.filter(image => image.isFavorite()).forEach(image => image.hide())
+);
