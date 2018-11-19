@@ -1,18 +1,19 @@
 # WarsawJS Workshop #26 - JavaScript dla początkujących
 
 ## Features
-[] - wyświetl zdjęcia z katalogu `images` - tablice, pętle
 
-[] - dodaj klasę "image--favourite" po kliknięciu w ulubione zdjęcie
+[x] - wyświetl zdjęcia z katalogu `images` - tablice, pętle
 
-[] - usuń klasę "image--favourite" jeżeli użytkownik odkliknął ulubione zdjęcie
+[x] - dodaj klasę "image--favourite" po kliknięciu w ulubione zdjęcie
 
-[] - użyj klas do stworzenia obiektu zdjęcia - class
+[x] - usuń klasę "image--favourite" jeżeli użytkownik odkliknął ulubione zdjęcie
 
-[] - przenieś klasę Image do nowego pliku - import/export, babel, transpilacja
+[x] - użyj klas do stworzenia obiektu zdjęcia - class
 
-[] - dodaj zdjęcie ze swojego komputera - File API
+[x] - przenieś klasę Image do nowego pliku - import/export, babel, transpilacja
 
-[] - pokaż wyłącznie ulubione zdjęcia po kliknięciu w przycisk
+[x] - dodaj zdjęcie ze swojego komputera - File API
 
-[] - pobierz zdjęcia z flickrAPI - fetch, then, Promise
+[x] - pokaż wyłącznie ulubione zdjęcia po kliknięciu w przycisk
+
+[x] - pobierz zdjęcia z flickrAPI - fetch, then, Promise

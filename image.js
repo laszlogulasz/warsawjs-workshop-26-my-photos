@@ -16,7 +16,7 @@ export default class Image {
   }
 
   isFavorite() {
-    return !this.imageElement.classList.contains("image--favourite");
+    return this.imageElement.classList.contains("image--favourite");
   }
 
   hide() {
